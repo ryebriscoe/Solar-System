@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+    <!-- Planet info-->
+    <h2>
+        <%= planetName %>
+    </h2>
+    <img src="<%= planetInfo.image %>" alt="<%= planetName %>">
+    <p>Distance from Sun: <%= planetInfo.distanceFromSun %></p>
+    <p>Radius: <%= planetInfo.radius %> miles</p>
+    <p>Year length: <%= planetInfo.yearLength %></p>
+    <p>One Earth Day: <%= planetInfo.oneEarthDay %></p>
+    <p>Moons: <%= planetInfo.moons %></p>
+    <p>Description: <%= planetInfo.description %></p>
+    <a href="<%= planetInfo.websiteLink %>">Learn more</a>
+
+    <%- include("partials/footer.ejs") %>
